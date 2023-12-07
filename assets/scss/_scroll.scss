@@ -1,0 +1,20 @@
+//width
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+//handler
+::-webkit-scrollbar-thumb {
+  background: $redDark;
+  border-radius: 1.0rem;
+  border: .2rem solid $mainBlack;
+
+  &:hover {
+    background: $redLight;
+  }
+}
+
+//track
+::-webkit-scrollbar-track {
+  background: $mainBlack;
+}

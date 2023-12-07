@@ -1,0 +1,60 @@
+@import '@scss/variables';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: $glassGradient;
+	padding: 3.0rem;
+	gap: 3.0rem;
+	z-index: 99;
+	backdrop-filter: blur(1.0rem);
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		width: auto;
+		height: auto;
+		box-sizing: content-box;
+		padding: .5rem;
+		gap: 5.0rem;
+
+		.item {
+			width: fit-content;
+			height: 100%;
+			border-radius: .2rem;
+	
+			span {
+				color: $alpha;
+				font-family: $mainFont;
+				font-size: clamp(2.8rem, 1.875vw, 3.6rem);
+				background: $whiteGradient;
+				background-clip: text;
+				letter-spacing: .1rem;
+				line-height: 70%;
+			}
+	
+			&.isActive {
+				border-bottom: .2rem solid $redDark;
+	
+				span {
+					background: $redGradient;
+					background-clip: text;
+				}
+			}
+	
+			&:hover {
+				transition: all 0.2s;
+				transform: scale(1.05);
+				cursor: pointer;
+			}
+		}
+	}
+}

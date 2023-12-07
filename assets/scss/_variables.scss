@@ -1,0 +1,43 @@
+@import 'animations';
+@import 'fonts';
+
+//colors
+$mainLight: #ffffff;
+$secLight: #d7d7d7;
+$mainDark: #0d0d0d;
+$secDark: #0a0a0a;
+$mainBlack: #050505;
+$secBlack: #080808;
+$mainGray: #303030;
+$secGray: #151515;
+$thirdGray: #101010;
+
+$redLight: #D51321;
+$redDark: #850000;
+$redUDark: #4E050E;
+$redShadow: #4E050E30;
+
+$alpha: #00000000;
+
+//gradients
+$redGradient:  linear-gradient(180deg, $redLight 0%, $redDark 100%);
+$whiteGradient: linear-gradient(0deg, $mainLight 0%, $secLight 100%);
+$blackGradient: linear-gradient(180deg, $mainDark 0%, $secDark 100%);
+$darkGradient: linear-gradient(180deg, $thirdGray 0%, $mainDark 100%);
+$grayGradient: linear-gradient(180deg, $secGray 0%, $thirdGray 100%);
+$cardGradient: linear-gradient(180deg, #020202 0%, #020202 100%);
+$glassGradient: linear-gradient(130deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.95) 100%);
+
+//shadows
+$defaultShadow: linear-gradient(180deg, $alpha 50%, $mainBlack 100%);
+$headerShadow: linear-gradient(0deg, $alpha 0%, $mainBlack 100%);
+$footerShadow: linear-gradient(180deg, $alpha 0%, $mainBlack 100%);
+$dropShadow: drop-shadow(0 0 5.0rem $mainBlack);
+
+//fonts
+$mainFont: 'They Perished';
+$secFont: 'Midnight Terror';
+$thirdFont: 'Dead Walking';
+
+//animations
+$verticalBounceLoop: 'verticalBounceLoop' 0.5s alternate infinite ease-in both;

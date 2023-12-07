@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": [ "core/*" ],
+      "@components/*": [ "components/*" ],
+      "@config/*": [ "config/*" ],
+      "@hooks/*": [ "hooks/*" ],
+      "@services/*": [ "services/*" ],
+      "@providers/*": [ "providers/*" ],
+      "@public/*": [ "public/*" ],
+      "@utils/*": [ "utils/*" ],
+      "@fonts/*": [ "assets/fonts/*" ],
+      "@scss/*": [ "assets/scss/*" ],
+    }
+  },
+  "include": [
+    "."
+  ]
+}
